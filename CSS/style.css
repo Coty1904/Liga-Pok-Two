@@ -1,0 +1,437 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+}
+
+body {
+  background-color: #FFCB05;
+  margin: 0;
+  padding: 0;
+  color: #B4AA99;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Pokéballs */
+
+#particles-js {
+    background-color: #FFCB05;
+}
+
+/* Titulo de la página */
+.titulo{
+    display: flex;
+    background-color: #FFCB05;
+}
+
+.titulo h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: 10rem;
+  color: #4D4637;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+  
+.titulo h1:hover {
+    background-color: #4D4637;
+    color: #B4AA99;
+}
+
+section .container-interno {
+    margin: 100px;
+}
+
+/* Titulo de cada sección */
+
+.titulo-section {
+    font-size: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: .5rem solid #A28E65;
+    background-color: #FFF9EE;
+    color: #402E32;
+    margin: 2rem;
+}
+
+/* Campeón */
+
+.campeon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.campeon-trofeo {
+    width: 70vw;
+    border: #009878 solid 1rem;
+    background-color: #C2FCF2;
+    border-radius: 2rem;
+    margin: 2rem;
+}
+
+.nombre-campeon {
+    font-size: 5rem;
+    font-family: 'space Mono', monospace;
+    color: #2A75BB;
+    margin: 1rem;
+}
+
+/* Cartas Scroll Down */
+
+section .cartas {
+    display: flex;
+}
+
+section .cartas .texto-cartas {
+    background-color: #61BAAE;
+    color: #614200;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 2rem;
+    border: .3rem solid #006B61;
+}
+
+section .cartas .texto-cartas h3 {
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Reglamento */
+
+.reglamento {
+    color: #B4AA99;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem;
+}
+
+.reglamento h1 {
+    justify-self: center;
+    align-self: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+
+.reglamento h2 {
+    font-size: 2rem;
+}
+
+.container-reglamento {
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-top: 0;
+    border-radius: 2rem;
+    border: #006B61 solid .5rem;
+    background-color: #C2FCF2;
+    color: #649B92;
+}
+
+.container-reglamento .linea {
+    background-image: linear-gradient(to right, #ff0505, #d20021, #a20028, #710b26, #42101d, #3e2131, #39303a, #3b3b3b, #676767, #979797, #cacaca, #ffffff);
+    height: .3rem;
+    width: 100%;
+}
+
+.titulo-reglas {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #3F4756;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+.trofeo {
+    justify-self: center;
+    align-self: center;
+    width: 50rem;
+}
+
+.descripcion{
+    align-self: center;
+    color: #402E32;
+    margin-bottom: 2rem;
+}
+
+/* Gráfico del Torneo */
+
+.llaves {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.fixture {
+    color: #2A75BB;
+    text-align: center;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+iframe {
+    width: 80vw; 
+    height: 60vh;
+}
+
+.info {
+    margin: 10rem;
+    padding: 1rem;
+    background-color: #61BAAE;
+    color: #614200;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    border: .5rem solid #006B61;
+    border-radius: 2rem;
+}
+
+.horarios {
+    justify-content: flex-start;
+}
+
+.horarios h1 {
+    font-size: 5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .gallade{
+    width: 15rem;
+}
+
+footer .mega-rayquaza{
+    width: 15rem;
+}
+
+footer .hawlucha{
+    width: 15rem;
+}
+
+@media (max-width: 900px) {
+    section h1 {
+        font-size: 40px;
+    }
+
+    section .cartas {
+        flex-direction: column;
+    }
+
+    section {
+        /* margin-left: 2rem; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    /* Titulo de la página */
+
+    .titulo{
+        display: flex;
+        background-color: #FFCB05;
+        text-align: center;
+    }
+    
+    .titulo h1 {
+      font-family: 'Space Mono', monospace;
+      font-size: 3rem;
+      color: #009878;
+      padding: 0rem clamp(1rem, 2vw, 3rem);
+      border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    }
+      
+    .titulo h1:hover {
+        background-color: #009878;
+        color: #4D4637;
+    }
+
+    /* Cartas */
+
+    section:nth-child(2) {
+        color: #2A75BB;
+        background-color: #FFCB05;
+    }
+    
+    section .container-interno {
+        margin: 2rem;
+    }
+    
+    .titulo-cartas {
+        font-size: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 1rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: .7rem solid #00D8AC;
+        background-color: white;
+    }
+    
+    section .cartas {
+        display: flex;
+    }
+    
+    section .cartas .texto-cartas {
+        background-color: #00D8AC;
+        text-align: justify;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        border: .4rem solid #009878;
+    }
+    
+    section .cartas .texto-cartas h3 {
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    
+    .reveal {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: all 2s ease;
+    }
+    
+    .reveal.active {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    /* Reglamento */
+
+    .reglamento {
+        color: #3F4756;
+        background-color: #FFCB05;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 1rem;
+    }
+    
+    .reglamento h1 {
+        justify-self: center;
+        align-self: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    
+    .reglamento h2 {
+        font-size: 2rem;
+    }
+    
+    .linea {
+        background-image: linear-gradient(to right, #ff0505, #d20021, #a20028, #710b26, #42101d, #3e2131, #39303a, #3b3b3b, #676767, #979797, #cacaca, #ffffff);
+        height: .3rem;
+        width: 100%;
+    }
+    
+    .titulo-reglas {
+        font-size: 2rem;
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+    
+    .trofeo {
+        justify-self: center;
+        align-self: center;
+        width: 75vw;
+    }
+    
+    .descripcion{
+        align-self: center;
+    }
+
+    /* Llaves */
+
+    .llaves {
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    .llaves-titulo {
+        color: #3F4756;
+        font-size: 3.5rem;
+        margin-top: 3rem;
+        padding: .5rem;
+        border-radius: 25px;
+        border: .3rem dashed red;
+        justify-content: flex-start;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    
+    .fixture {
+        color: #2A75BB;
+        text-align: center;
+        justify-content: center;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    
+    .info {
+        margin: 2rem;
+        margin-bottom: 0;
+        padding: .5rem;
+        background-color: #00D8AC;
+        color: #3F4756;
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 900;
+        border: .5rem solid #009878;
+        border-radius: 2rem;
+    }
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    footer .gallade{
+        width: 33vw;
+    }
+    
+    footer .mega-rayquaza{
+        width: 33vw;
+    }
+    
+    footer .hawlucha{
+        width: 33vw;
+    }
+}
